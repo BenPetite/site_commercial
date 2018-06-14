@@ -100,67 +100,96 @@ textarea {
 /* global classes */
 
 /* common rules */
-nav, header, main, aside, footer{
-  width: 95%;
-}
-
-nav ul li a{
-  text-decoration: none;
+ul{
   list-style-type: none;
 }
-/* end common rules */
 
-body{
-  display: flex;
-  flex-direction: column;
+a{
+  background-color: white;
+  text-decoration: none;
 }
+
+nav, header, main, footer{
+  width: 95%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul, footer ul{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: orange; */
+  }
+/* end common rules */
 
 /* start nav */
 nav{
-  display: flex;
-  background-color: yellow;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  padding: 20px auto;
+}
+
+nav ul li{
+  margin: 0 10;
 }
 /* end nav */
 
 /* start header */
 header{
-  background-color: orange;
+  margin-top: 50px;
+  background-color: green;
 }
 
 h1{
-
+  text-align: center;
 }
 /* end header */
 
 /* start main */
 main{
-
+  margin : 0 auto;
 }
 
-img {
-	margin: 0px;
-	width:100%;
+main article{
+  margin-bottom: 10px;
+  border: solid grey 1px;
+  border-radius: 3px;
+}
+main img{
+  width: 35%;
+  float: left;
+  margin: 0 20px;
+  padding-top: 10px;
 }
 
+h2{
+  text-align: center;
+}
+
+article a{
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+article p{
+  font-size: .8em;
+  text-align: justify;
+  padding: 10px;
+}
+
+article img{
+  width: 20%;
+}
 /* end main */
 
-/* start aside */
-aside{
-
-}
-/* end aside */
 
 /* start footer */
-footer{
-  background-color: brown;
-  display: flex;
-}
 
-footer ul li{
-    display: inline-block;
-    justify-content: space-around;
-}
+
 /* end footer */
+
 
 /* media queries */
 
