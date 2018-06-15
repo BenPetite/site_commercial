@@ -96,35 +96,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* #a599b5 */
 
-/* global classes */
+/* start global classes */
+/* end global classes */
 
-/* common rules */
+/* start common rules */
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #a599b5;
+}
 ul{
   list-style-type: none;
 }
 
 a{
-  background-color: white;
   text-decoration: none;
 }
 
-nav, header, main, footer{
+header, main{
   width: 95%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+nav, footer{
+  background-color: #a599b5;
+  width: 100%;
+}
+
 nav ul, footer ul{
-    display: flex;
-    justify-content: space-around;
-    /* background-color: orange; */
+  display: flex;
+  justify-content: space-around;
+  }
+
+nav li a, footer li a{
+  color: white;
   }
 /* end common rules */
 
 /* start nav */
 nav{
-  background-color: red;
   position: fixed;
   top: 0;
   height: 10vh;
@@ -138,8 +150,15 @@ nav ul li{
 
 /* start header */
 header{
-  margin-top: 50px;
-  background-color: green;
+  display: flex;
+  background color: white;
+  margin-top: 40px;
+}
+
+header img{
+  justify-content: space-around;
+  background-image: url(..img/header_c.jpg);
+  width: 80vh;
 }
 
 h1{
@@ -153,6 +172,7 @@ main{
 }
 
 main article{
+  background-color: white;
   margin-bottom: 10px;
   border: solid grey 1px;
   border-radius: 3px;
@@ -182,11 +202,18 @@ article p{
 article img{
   width: 20%;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
 /* end main */
 
 
 /* start footer */
-
 
 /* end footer */
 

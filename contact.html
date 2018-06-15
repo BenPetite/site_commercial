@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -32,25 +33,37 @@
         </li>
         <li>
           <a href="tarifs.html">tarifs</a>
-        </li>
-        <li>
-          <a href="contact.html">nous contacter</a>
-        </li>
     </ul>
   </nav>
   <!-- **********end NAV -->
 
   <!-- **********start HEADER -->
     <header>
-      <section>
-        <h1>l'emboîte</h1>
-      </section>
+      <p>
+      <img src="img/header_c.jpg" alt="image de fond">
+      </p>
+      <!-- <section> -->
+        <!-- <h1>l'emboîte</h1> -->
+      <!-- </section> -->
     </header>
     <!-- **********end HEADER -->
 
   <!-- **********start MAIN -->
   <main>
     <h2>contact</h2>
+    <form method="post" action="fichier.php">
+      <p>pour nous contacter, merci de renseigner les champs ci-dessous</p>
+        <span>
+          <input type="text" name="nom" id="nom" placeholder="vos nom et prénom" required />
+        </span>
+        <span>
+          <input type="email" placeholder="votre adresse mail" required/>
+        </span>
+      <textarea name="texte" id="texte" placeholder="rédigez votre message" required></textarea>
+      <p>
+      <input type="submit" value="envoyer">
+      </p>
+    </form>
   </main>
   <!-- **********end MAIN -->
 
