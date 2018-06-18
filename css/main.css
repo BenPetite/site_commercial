@@ -100,7 +100,6 @@ textarea {
 
 /* start global classes */
 /* end global classes */
-
 /* start common rules */
 body{
   font-family: 'Roboto', sans-serif;
@@ -156,7 +155,7 @@ header{
 }
 
 header img{
-  justify-content: space-around;
+  justify-content:center;
   background-image: url(..img/header_c.jpg);
   width: 80vh;
 }
@@ -219,7 +218,6 @@ form{
 
 
 /* media queries */
-
 
 
 
